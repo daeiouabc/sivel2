@@ -13,7 +13,7 @@ describe "Control de acceso " do
 
   describe "analista" do
     it "puede crear caso" do
-      visit "/casos/nuevo"
+      visit sivel2_gen.casos_new_path
       @numcaso=find_field('Código').value
 
       # Datos básicos
