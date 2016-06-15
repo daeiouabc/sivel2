@@ -19,7 +19,8 @@ describe "Llenar caso con javascript", :js => true do
 
   describe "administrador llena" do
     it "puede crear caso" do
-      visit sivel2_gen.casos_new_path
+      visit File.join(Rails.configuration.relative_url_root,
+                      'casos/nuevo')
       @numcaso=find_field('Código').value
 
       # Datos básicos
